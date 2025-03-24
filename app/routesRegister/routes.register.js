@@ -3,9 +3,6 @@ import helmet from "helmet";
 import { json, urlencoded } from "express";
 import { ResponseHandler } from "../../common/utils/handlers.js";
 import { routes } from "./routes.data.js";
-import { chatApplicationRoutes } from "../chat-application/chatApplication.routes.js";
-import http from "http";
-import { Server } from "socket.io";
 import { initializeSocket } from "../socket/socket.js";
 
 export const registerRoutes = (app, server) => {
